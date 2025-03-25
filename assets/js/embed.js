@@ -41,7 +41,8 @@ const embedDirectly = [
   "now.gg.zkit.above.gay",
   "extprint3r.github.io",
   "ext-remover.net",
-  "e.widgetbot.io"
+  "e.widgetbot.io",
+  "vm.frogiee1.com"
 ];
 
 const embedAlternative = {

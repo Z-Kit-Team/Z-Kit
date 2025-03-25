@@ -5,7 +5,7 @@
     "title": "! Request an App"
   },
   {
-    "link": "https://youtube.com",
+    "link": "https://yewtu.be",
     "imgSrc": "assets/youtube.png",
     "title": "YouTube"
   },
@@ -30,7 +30,7 @@
     "title": "Instagram"
   },
   {
-    "link": "https://reddit.com",
+    "link": "https://redlib.perennialte.ch",
     "imgSrc": "assets/reddit.png",
     "title": "Reddit"
   },
@@ -78,5 +78,50 @@
     "link": "https://character.ai",
     "imgSrc": "assets/cai.png",
     "title": "character.ai"
+  },
+  {
+    "link": "https://play.geforcenow.com/mall",
+    "imgSrc": "assets/geforce.png",
+    "title": "NVIDIA GeForce Now"
+  },
+  {
+    "link": "https://www.xbox.com/en-US/play",
+    "imgSrc": "assets/xbox.png",
+    "title": "XBOX Cloud Gaming"
+  },
+  {
+    "link": "https://luna.amazon.com/home",
+    "imgSrc": "assets/luna.png",
+    "title": "Amazon Luna"
+  },
+  {
+    "link": "https://szvyflix.vercel.app",
+    "imgSrc": "assets/netflix.png",
+    "title": "Netflix"
+  },
+  {
+    "link": "https://blooketbot.glitch.me",
+    "imgSrc": "assets/blooket.png",
+    "title": "Blooket Hacks"
+  },
+  {
+    "link": "https://www.crunchyroll.com",
+    "imgSrc": "assets/crunchyroll.png",
+    "title": "Crunchyroll"
+  },
+  {
+    "link": "https://www.coolmathgames.com",
+    "imgSrc": "assets/coolmath.png",
+    "title": "Coolmath Games"
+  },
+  {
+    "link": "https://soundcloud.com/discover",
+    "imgSrc": "assets/soundcloud.png",
+    "title": "SoundCloud"
+  },
+  {
+    "link": "https://vm.frogiee1.com",
+    "imgSrc": "assets/vm.png",
+    "title": "Virtual Machine"
   }
 ]
