@@ -203,7 +203,7 @@
 
         document.querySelectorAll(".favorite-btn").forEach(btn => {
           btn.addEventListener("click", (e) => {
-            e.stopPropagation(); // Prevent the click event from propagating to the tile
+            e.stopPropagation();
             const title = e.target.getAttribute("data-title");
             if (favorites.includes(title)) {
               favorites = favorites.filter(fav => fav !== title);
@@ -213,7 +213,7 @@
               e.target.textContent = "heart_minus";
             }
             localStorage.setItem("appfavorites", JSON.stringify(favorites));
-            renderGames(searchBar.value); // Re-render games to update order
+            renderGames(searchBar.value);
           });
         });
       }

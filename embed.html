@@ -152,26 +152,22 @@
     </div>
 
     <script>
-        // Create stars based on screen size
         function createStars() {
             const starsContainer = document.getElementById('stars');
             const screenArea = window.innerWidth * window.innerHeight;
-            const starDensity = 0.0001; // Adjust for more or fewer stars
+            const starDensity = 0.0001;
             const numberOfStars = Math.floor(screenArea * starDensity);
             
             for (let i = 0; i < numberOfStars; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
                 
-                // Random position
                 const x = Math.random() * 100;
                 const y = Math.random() * 100;
                 
-                // Random size based on viewport size
                 const maxSize = Math.min(window.innerWidth, window.innerHeight) * 0.003;
                 const size = Math.random() * maxSize + 1;
                 
-                // Random opacity
                 const opacity = Math.random() * 0.8 + 0.2;
                 
                 star.style.left = `${x}%`;
@@ -180,7 +176,6 @@
                 star.style.height = `${size}px`;
                 star.style.opacity = opacity;
                 
-                // Add twinkling effect with random durations
                 const duration = Math.random() * 3 + 2;
                 const delay = Math.random() * 5;
                 star.style.animation = `twinkle ${duration}s infinite ${delay}s`;
@@ -189,18 +184,16 @@
             }
         }
         
-        // Initial creation
         createStars();
         
-        // Recreate stars when window is resized
         window.addEventListener('resize', () => {
             const starsContainer = document.getElementById('stars');
-            starsContainer.innerHTML = ''; // Clear existing stars
+            starsContainer.innerHTML = '';
             createStars();
         });
     </script>
 
-    <script src="z/kit/uv.bundle.js"></script>
+    <script src="z/kit/uv.bundle.js"></script> <!-- petah. the ultraviolet static by tf7software is here. -->
     <script src="z/kit//uv.config.js"></script>
     <script src="z/register-sw.js"></script>
     <script src="assets/js/embed.js"></script>

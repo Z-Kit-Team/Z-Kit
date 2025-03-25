@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Kit Launcher</title>
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/Abovescore/zkit/main/resources/icons/schoology.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at bottom, #555, #000);
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0;
+      animation: twinkle 5s infinite;
+    }
+
+    @keyframes twinkle {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .content {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: white;
+    }
+
+    .content h1 span {
+      color: silver;
+      text-shadow: 0 0 20px silver, 0 0 40px silver, 0 0 60px silver;
+    }
+
+    .divider {
+      width: 350px;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 20px 0;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #ccc;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      width: 300px;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 12px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      background-color: #333;
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    button {
+      background: grey;
+      color: white;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 17px;
+      font-weight: bold;
+      text-shadow: 0 0 20px silver, 0 0 40px silver, 0 0 60px silver;
+      position: relative;
+      border: 2px solid silver;
+      box-shadow: 0 0 10px silver;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: 0 0 20px silver;
+      opacity: 0.9;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="background">
+    <div class="stars"></div>
+    <div class="content">
+      <h1><span>Z-Kit</span> Launcher</h1>
+      <div class="divider"></div>
+
+      <label for="title-input">Page Title</label>
+      <input type="text" id="title-input" placeholder="New Tab" value="New Tab" />
+
+      <label for="pre-saved-options">Page Icon</label>
+      <select id="pre-saved-options">
+        <option value="" selected="selected">Choose an Option</option>
+        <option value="schoology">Schoology</option>
+        <option value="clever">Clever</option>
+        <option value="google-classroom">Google Classroom</option>
+        <option value="googledocs">Google Docs</option>
+        <option value="googleslides">Google Slides</option>
+        <option value="canvas">Canvas</option>
+      </select>
+
+      <button id="generate-button"><span>Launch Z-Kit</span></button>
+    </div>
+  </div>
+
+  <script>
+    const url = "https://zkit.above.gay/home";
+
+    document.getElementById('pre-saved-options').addEventListener('change', (e) => {
+      const titleInput = document.getElementById('title-input');
+      if (e.target.value) {
+        if (e.target.value === 'google-classroom') {
+          titleInput.value = 'Home';
+        } else if (e.target.value === 'clever') {
+          titleInput.value = 'Clever | Portal';
+        } else if (e.target.value === 'schoology') {
+          titleInput.value = 'Home | Schoology';
+        } else if (e.target.value === 'googledocs') {
+          titleInput.value = 'Untitled document - Google Docs';
+        } else if (e.target.value === 'googleslides') {
+          titleInput.value = 'Untitled presentation - Google Slides';
+        } else if (e.target.value === 'canvas') {
+          titleInput.value = 'Dashboard';
+        }
+      } else {
+        titleInput.value = 'New Tab';
+      }
+    });
+
+    document.getElementById('generate-button').addEventListener('click', () => {
+      const titleInput = document.getElementById('title-input');
+      const title = titleInput.value;
+
+      let faviconUrl = '';
+
+      const preSavedOption = document.getElementById('pre-saved-options').value;
+      if (preSavedOption === 'schoology') {
+        faviconUrl = 'https://raw.githubusercontent.com/Abovescore/zkit/main/resources/icons/schoology.png';
+      } else if (preSavedOption === 'google-classroom') {
+        faviconUrl = 'https://raw.githubusercontent.com/Abovescore/zkit/main/resources/icons/classroom.png';
+      } else if (preSavedOption === 'clever') {
+        faviconUrl = 'https://raw.githubusercontent.com/Abovescore/zkit/main/resources/icons/clever.png';
+      } else if (preSavedOption === 'googledocs') {
+        faviconUrl = 'https://raw.githubusercontent.com/Abovescore/zkit/main/resources/icons/googledocs.png';
+      } else if (preSavedOption === 'googleslides') {
+        faviconUrl = 'https://raw.githubusercontent.com/Abovescore/zkit/main/resources/icons/googleslides.png';
+      } else if (preSavedOption === 'canvas') {
+        faviconUrl = 'https://raw.githubusercontent.com/Abovescore/zkit/main/resources/icons/canvas.png';
+      }
+
+      var win = window.open();
+      win.document.title = title;
+
+      var link = win.document.createElement('link');
+      link.rel = 'shortcut icon';
+      link.href = faviconUrl;
+      win.document.head.appendChild(link);
+
+      win.document.body.style.margin = '0';
+      win.document.body.style.height = '100vh';
+
+      var iframe = win.document.createElement('iframe');
+      iframe.style.border = 'none';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.margin = '0';
+      iframe.src = url;
+
+      win.document.body.appendChild(iframe);
+
+      window.location.href = "https://www.google.com/";
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    const particlesConfig = {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 }
+        },
+        opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+        size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 }
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: false, mode: "repulse" }, onclick: { enable: false, mode: "repulse" }, resize: true },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 }
+        }
+      },
+      retina_detect: true
+    };
+
+    particlesJS("particles-js", particlesConfig);
+  </script>
+</body>
+
+</html>

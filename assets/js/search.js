@@ -1,5 +1,5 @@
 /**
- *
+ * me when i take the search.js from ultraviolet-static by titaniumnetwork and dont modify it at all :troll:
  * @param {string} input
  * @param {string} template Template for a search query.
  * @returns {string} Fully qualified URL
