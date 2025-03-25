@@ -6,7 +6,7 @@
 <h2 align="center"> Z-Kit is an almost fully unblockable proxy suite.</h2>
 
 > [!IMPORTANT]  
-> Z-Kit is not ready for release, the website is still in development.
+> If you like my website, or use code from it for your own project, consider giving it a star! :3
 
 ## Features
 ```
@@ -18,14 +18,8 @@
 ├── Apps
 │   ├── Now.GG
 │   └── GeForce NOW
-├── Proxy
-│   └── Ultraviolet
-├── Panic key
-│   ├── Customizable key
-│   └── Customizable website
-└── AI Assistant
-    ├── DeepSeek
-    └── Gemini
+└── Proxy
+    └── Ultraviolet
 ```
 
 ## Contributors
