@@ -769,5 +769,10 @@
     "link": "embed.html#https://eaglymc.com/web-javascript/",
     "imgSrc": "https://games.above.gay/minecraft/splash.jpeg",
     "title": "Minecraft 1.20"
+  },
+  {
+    "link": "embed.html#https://assets.theludos.com/games/baldis-basics",
+    "imgSrc": "https://games.above.gay/!img/baldi.png",
+    "title": "Baldi's Basics"
   }
 ]
