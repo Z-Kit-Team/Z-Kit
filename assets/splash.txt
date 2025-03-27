@@ -23,6 +23,10 @@ Bumpscosity too high.
 This website is totally for education!
 sudo rm -rf / --no-preserve-root
 Make sure to change your panic key!
-DROP PROD;
+DROP TABLE Production;
 help its been three days how do i exit vim
 Do ya smell it?
+Press the home button in the top left to see a new splash!
+Tumble me down, and I will sit. Upon my ruins, (smiling yet :)
+meow
+Go to benrogo.net!
