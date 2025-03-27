@@ -105,9 +105,9 @@
     "title": "Blooket Hacks"
   },
   {
-    "link": "https://www.crunchyroll.com",
-    "imgSrc": "assets/crunchyroll.png",
-    "title": "Crunchyroll"
+    "link": "https://9animetv.to",
+    "imgSrc": "assets/9anime.png",
+    "title": "9Anime"
   },
   {
     "link": "https://www.coolmathgames.com",
@@ -123,5 +123,10 @@
     "link": "https://vm.frogiee1.com",
     "imgSrc": "assets/vm.png",
     "title": "Virtual Machine"
+  },
+  {
+    "link": "https://cobalt.tools",
+    "imgSrc": "assets/cobalt.png",
+    "title": "cobalt tools"
   }
 ]
