@@ -22,12 +22,10 @@
     └── Ultraviolet
 ```
 
-## Contributors
-Massive thanks to the following people for contributing to Z-Kit!
+## Stargazers
+Massive thanks to anyone who stars Z-Kit!
 
-<a href="https://github.com/z-kit-team/z-kit/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=z-kit-team/z-kit" />
-</a>
+[![Star History Chart](https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Date)](https://star-history.com/#Z-Kit-Team/Z-Kit&Date)
 
 ## Keywords (ignore)
 securly, goguardian, cisco umbrella, relay, unblocker, proxy, unblocked games, bypass, school blocker, unblocked, chromebook
