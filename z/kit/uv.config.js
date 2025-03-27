@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/z/-kit/',
+    prefix: '/z/kit/',
     bare:'https://goto.zkit.above.gay/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
