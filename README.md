@@ -25,7 +25,7 @@
 ## Stargazers
 Massive thanks to anyone who stars Z-Kit!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Date)](https://star-history.com/#Z-Kit-Team/Z-Kit&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline)](https://www.star-history.com/#Z-Kit-Team/Z-Kit&Timeline)
 
 ## Keywords (ignore)
 securly, goguardian, cisco umbrella, relay, unblocker, proxy, unblocked games, bypass, school blocker, unblocked, chromebook
