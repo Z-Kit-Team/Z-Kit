@@ -10,6 +10,7 @@
 ## Official Instances
 > [!NOTE]
 > The official domain is [zkit.above.gay](https://zkit.above.gay)
+
 | URL                                              | Status                                                |
 | ------------------------------------------------ | ----------------------------------------------------- |
 | [zkit.above.gay](https://zkit.above.gay)         | ![Active](https://img.shields.io/badge/Active-6AD141) |
