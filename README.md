@@ -8,6 +8,10 @@
 > [!IMPORTANT]  
 > If you like my website, or use code from it for your own project, consider giving it a star! :3
 
+<a href="https://render.com/deploy?repo=https://github.com/Z-Kit-Team/Z-Kit">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" />
+</a>
+
 ## Features
 ```
 ├── Clean UI
