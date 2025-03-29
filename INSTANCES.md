@@ -1,3 +1,4 @@
+# Z-Kit Instances
 > [!TIP]
 > If you want to host your own Z-Kit, either use the buttons in the README, or make the following DNS record:
 > 
@@ -6,8 +7,6 @@
 > Then make a GitHub issue stating the URL, DNS Provider, and Hosting Provider.
 > 
 > Alternatively, [download the launcher.](https://raw.githubusercontent.com/Z-Kit-Team/Z-Kit/refs/heads/main/index.html)
-
-# Z-Kit Instances
 ## Official Instances
 | URL                                              | Status                                                |
 | ------------------------------------------------ | ----------------------------------------------------- |
