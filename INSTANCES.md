@@ -8,7 +8,7 @@
 > 
 > Alternatively, [download the launcher.](https://raw.githubusercontent.com/Z-Kit-Team/Z-Kit/refs/heads/main/index.html)
 ## Official Instances
-> [!INFO]
+> [!NOTE]
 > The official domain is [zkit.above.gay](https://zkit.above.gay)
 | URL                                              | Status                                                |
 | ------------------------------------------------ | ----------------------------------------------------- |
