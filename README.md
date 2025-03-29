@@ -11,7 +11,6 @@
 <a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/Z-Kit-Team/Z-Kit"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a>
 <a target="_blank" href="https://replit.com/github/Z-Kit-Team/Z-Kit"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
 <a target="_blank" href="https://glitch.com/edit/#!/import/github/Z-Kit-Team/Z-Kit"><img alt="Remix on Glitch" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg"></a>
-<a target="_blank" href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.web%2Fwebapp-linux-node%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/azure.svg"></a>
 <a target="_blank" href="https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/Z-Kit-Team/Z-Kit"><img alt="Deploy to IBM Cloud" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/ibmcloud.svg"></a>
 <a target="_blank" href="https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/Z-Kit-Team/Z-Kit"><img alt="Deploy to Amplify Console" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/amplifyconsole.svg"></a>
 <a target="_blank" href="https://deploy.cloud.run/?git_repo=https://github.com/Z-Kit-Team/Z-Kit"><img alt="Run on Google Cloud" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/googlecloud.svg"></a>
@@ -40,7 +39,13 @@
 ## Stargazers
 Massive thanks to anyone who stars Z-Kit!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline)](https://www.star-history.com/#Z-Kit-Team/Z-Kit&Timeline)
+<a href="https://www.star-history.com/#Z-Kit-Team/Z-Kit&Timeline">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline" />
+ </picture>
+</a>
 
 ## Keywords (ignore)
 securly, goguardian, cisco umbrella, relay, unblocker, proxy, unblocked games, bypass, school blocker, unblocked, chromebook
