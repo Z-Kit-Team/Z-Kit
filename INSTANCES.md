@@ -1,7 +1,10 @@
 > [!TIP]
 > If you want to host your own Z-Kit, either use the buttons in the README, or make the following DNS record:
+> 
 > Type: `CNAME` Name: (whatever subdomain you would like to use) Target: `z-kit.pages.dev`
+> 
 > Then make a GitHub issue stating the URL, DNS Provider, and Hosting Provider.
+> 
 > Alternatively, [download the launcher.](https://raw.githubusercontent.com/Z-Kit-Team/Z-Kit/refs/heads/main/index.html)
 
 # Z-Kit Instances
