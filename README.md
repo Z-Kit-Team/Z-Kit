@@ -3,7 +3,7 @@
 <p align="center">
 <h1 align="center">https://zkit.above.gay</h1>
 
-<h2 align="center"> Z-Kit is an almost fully unblockable proxy suite.</h2>
+<h2 align="center"> Z-Kit is a fully unblockable proxy suite.</h2>
 
 > [!IMPORTANT]  
 > If you like my website, or use code from it for your own project, consider giving it a star! :3
@@ -11,6 +11,7 @@
 <a href="https://render.com/deploy?repo=https://github.com/Z-Kit-Team/Z-Kit">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" />
 </a>
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FZ-Kit-Team%2FZ-Kit"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
 ## Features
 ```
