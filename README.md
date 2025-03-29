@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/40df0ec0-7dc4-43f3-99cb-b87a2b7b163b" alt="Full Z-Kit Logo">
 <p align="center">
-<h1 align="center"><a href = "https://github.com/Z-Kit-Team/Z-Kit/blob/main/INSTANCES.md">Use Z-Kit</a></h1>
+<h1 align="center"><a href = "https://github.com/Z-Kit-Team/Z-Kit/blob/main/INSTANCES.md">Visit Z-Kit Here</a></h1>
 
 <h2 align="center"> Z-Kit is a fully unblockable proxy suite.</h2>
 
