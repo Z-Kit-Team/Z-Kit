@@ -11,7 +11,7 @@
 
 ## Community Instances
 > [!TIP]
-> If you want to host your own Z-Kit, either use the buttons in the README, or make the following DNS record:
+> If you want to host your own Z-Kit, either fork the repo and host it statically, or make the following DNS record:
 > 
 > Type: `CNAME` Name: (whatever subdomain you would like to use) Target: `z-kit.pages.dev`
 > 
