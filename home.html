@@ -16,7 +16,7 @@
   <div class="background">
     <div class="stars"></div>
     <div class="content">
-      <h1>Welcome to <span>&#647;&#7433;&#670;-Z</span></h1>
+      <h1>Welcome to <span>Z-Kit</span></h1>
       <p id="randomMessage"> </p>
 
       <script defer>
@@ -32,7 +32,7 @@
 
             const randline = lines[Math.floor(Math.random() * lines.length)];
 
-            document.getElementById('randomMessage').textContent = "april foul"; // document.getElementById('randomMessage').textContent = randline;
+            document.getElementById('randomMessage').textContent = randline;
           } catch (error) {
             console.error(error);
             document.getElementById('randomMessage').textContent = 'Error randomizing splash!';
