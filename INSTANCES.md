@@ -19,7 +19,7 @@
 > 
 > Alternatively, [download the launcher.](https://raw.githubusercontent.com/Z-Kit-Team/Z-Kit/refs/heads/main/index.html)
 >
-> Since Z-Kit is fully static, we reccomend using [GitHub Pages](https://pages.github.com/#user-site) or [Cloudflare Pages](https://dash.cloudflare.com/login?redirect_uri=https%3A%2F%2Fdash.cloudflare.com%2F%3Faccount%3Dpages) to host.
+> Since Z-Kit is fully static, we reccomend using [Cloudflare Pages](https://dash.cloudflare.com/login?redirect_uri=https%3A%2F%2Fdash.cloudflare.com%2F%3Faccount%3Dpages) to host.
 
 | URL                                              | DNS Provider | Hosting Provider | Status                                                |
 | ------------------------------------------------ | ------------ | ---------------- | ----------------------------------------------------- |
