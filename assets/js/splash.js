@@ -12,7 +12,7 @@ async function displayRandomLine() {
 
         const randomLine = lines[Math.floor(Math.random() * lines.length)];
 
-        document.getElementById('randomMessage').textContent = randomLine;
+        document.getElementById('randomMessage').textContent = "april foul"; // document.getElementById('randomMessage').textContent = randomLine;
     } catch (error) {
         console.error(error);
         document.getElementById('randomMessage').textContent = 'Error loading content';
