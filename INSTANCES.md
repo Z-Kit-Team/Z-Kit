@@ -15,7 +15,7 @@
 > 
 > Type: `CNAME` Name: (whatever subdomain you would like to use) Target: `z-kit.pages.dev`
 > 
-> Then make a GitHub issue stating the URL, DNS Provider, and Hosting Provider.
+> Then make a [GitHub issue](https://github.com/Z-Kit-Team/Z-Kit/issues/new) stating the URL, DNS Provider, and Hosting Provider.
 > 
 > Alternatively, [download the launcher.](https://raw.githubusercontent.com/Z-Kit-Team/Z-Kit/refs/heads/main/index.html)
 >
