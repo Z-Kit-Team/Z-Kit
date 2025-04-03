@@ -262,10 +262,6 @@
       iframe.style.margin = '0';
       iframe.src = url;
 
-      var script = document.createElement("script");
-      script.innerHTML = "window.onbeforeunload = function() { return true };";
-      
-      win.document.body.appendChild(script);
       win.document.body.appendChild(iframe);
 
       window.location.href = "https://www.google.com/";
