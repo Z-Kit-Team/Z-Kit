@@ -3,11 +3,12 @@
 > [!NOTE]
 > The main domain is [zkit.above.gay](https://zkit.above.gay).
 
-| URL                                              | Status                                                |
-| ------------------------------------------------ | ----------------------------------------------------- |
-| [zkit.above.gay](https://zkit.above.gay)         | ![Active](https://img.shields.io/badge/Active-6AD141) |
-| [z-kit.pages.dev](https://z-kit.pages.dev)       | ![Active](https://img.shields.io/badge/Active-6AD141) |
-| [not.goguardian.mom](https://not.goguardian.mom) | ![Active](https://img.shields.io/badge/Active-6AD141) |
+| URL                                                              | Status                                                |
+| ---------------------------------------------------------------- | ----------------------------------------------------- |
+| [zkit.above.gay](https://zkit.above.gay)                         | ![Active](https://img.shields.io/badge/Active-6AD141) |
+| [z-kit.pages.dev](https://z-kit.pages.dev)                       | ![Active](https://img.shields.io/badge/Active-6AD141) |
+| [not.goguardian.mom](https://not.goguardian.mom)                 | ![Active](https://img.shields.io/badge/Active-6AD141) |
+| [zkit.global.ssl.fastly.net](https://zkit.global.ssl.fastly.net) | ![Active](https://img.shields.io/badge/Active-6AD141) |
 
 ## Community Instances
 > [!TIP]
