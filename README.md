@@ -22,15 +22,11 @@
     └── Ultraviolet
 ```
 
-## Stargazers
-Massive thanks to anyone who stars Z-Kit!
+## Contributors
+Massive thanks to anyone who helps with Z-Kit!
 
-<a href="https://www.star-history.com/#Z-Kit-Team/Z-Kit&Timeline">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Timeline" />
- </picture>
+<a href="https://github.com/Z-Kit-Team/Z-Kit/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Z-Kit-Team/Z-Kit" />
 </a>
 
 ## Keywords (ignore)
