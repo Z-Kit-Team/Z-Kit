@@ -5,7 +5,7 @@
 
 <h2 align="center"> Z-Kit is a fully unblockable proxy suite.</h2>
 
-> [!INFO]  
+> [!NOTE]  
 > If you would like to host your own Z-Kit instance, check out [this link](https://github.com/Z-Kit-Team/Z-Kit/blob/main/INSTANCES.md)!
 
 ## Features
