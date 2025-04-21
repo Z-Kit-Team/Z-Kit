@@ -5,8 +5,8 @@
 
 <h2 align="center"> Z-Kit is a fully unblockable proxy suite.</h2>
 
-> [!IMPORTANT]  
-> If you like my website, or use code from it for your own project, consider giving it a star! :3
+> [!INFO]  
+> If you would like to host your own Z-Kit instance, check out [this link](https://github.com/Z-Kit-Team/Z-Kit/blob/main/INSTANCES.md)!
 
 ## Features
 ```
@@ -22,11 +22,15 @@
     └── Ultraviolet
 ```
 
-## Contributors
-Massive thanks to anyone who helps with Z-Kit!
+## Stargazers
+Massive thanks to anyone who stars Z-Kit, you mean a lot to us. ♡
 
-<a href="https://github.com/Z-Kit-Team/Z-Kit/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Z-Kit-Team/Z-Kit" />
+<a href="https://www.star-history.com/#z-kit/z-kit&z-kit-team/z-kit&Z-Kit-Team/Z-Kit&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=z-kit/z-kit,z-kit-team/z-kit,Z-Kit-Team/Z-Kit&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=z-kit/z-kit,z-kit-team/z-kit,Z-Kit-Team/Z-Kit&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=z-kit/z-kit,z-kit-team/z-kit,Z-Kit-Team/Z-Kit&type=Date" />
+ </picture>
 </a>
 
 ## Keywords (ignore)
