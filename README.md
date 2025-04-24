@@ -25,11 +25,11 @@
 ## Stargazers
 Massive thanks to anyone who stars Z-Kit, you mean a lot to us. ♡
 
-<a href="https://www.star-history.com/#z-kit/z-kit&z-kit-team/z-kit&Z-Kit-Team/Z-Kit&Date">
+<a href="https://www.star-history.com/#Z-Kit-Team/Z-Kit&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=z-kit/z-kit,z-kit-team/z-kit,Z-Kit-Team/Z-Kit&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=z-kit/z-kit,z-kit-team/z-kit,Z-Kit-Team/Z-Kit&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=z-kit/z-kit,z-kit-team/z-kit,Z-Kit-Team/Z-Kit&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Z-Kit-Team/Z-Kit&type=Date" />
  </picture>
 </a>
 
