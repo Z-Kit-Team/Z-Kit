@@ -1,14 +1,15 @@
 # Z-Kit Instances
 ## Official Instances
 > [!NOTE]
-> The main domain is [zkit.above.gay](https://zkit.above.gay).
+> The main domain is [z-kit.net](https://z-kit.net).
 
 | URL                                                                                            | Status                                                |
 | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [z-kit.net](https://z-kit.net)                                                                 | ![Active](https://img.shields.io/badge/Active-6AD141) |
 | [zkit.above.gay](https://zkit.above.gay)                                                       | ![Active](https://img.shields.io/badge/Active-6AD141) |
 | [yomamasostupidsheboughtticketstoxbox.live](https://yomamasostupidsheboughtticketstoxbox.live) | ![Active](https://img.shields.io/badge/Active-6AD141) |
-| [z-kit.pages.dev](https://z-kit.pages.dev)                                                     | ![Active](https://img.shields.io/badge/Active-6AD141) |
 | [not.goguardian.mom](https://not.goguardian.mom)                                               | ![Active](https://img.shields.io/badge/Active-6AD141) |
+| [z-kit.pages.dev](https://z-kit.pages.dev)                                                     | ![Active](https://img.shields.io/badge/Active-6AD141) |
 | [zkit.global.ssl.fastly.net](https://zkit.global.ssl.fastly.net)                               | ![Active](https://img.shields.io/badge/Active-6AD141) |
 
 ## Community Instances
