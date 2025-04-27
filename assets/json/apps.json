@@ -65,9 +65,9 @@
     "title": "DuckDuckGo"
   },
   {
-    "link": "https://google.com",
-    "imgSrc": "assets/google.png",
-    "title": "Google"
+    "link": "https://klearsky.pages.dev/#/home",
+    "imgSrc": "assets/bsky.png",
+    "title": "Bluesky"
   },
   {
     "link": "https://spotify.com",
@@ -95,7 +95,7 @@
     "title": "Amazon Luna"
   },
   {
-    "link": "https://szvyflix.vercel.app",
+    "link": "https://moviemaze.cc",
     "imgSrc": "assets/netflix.png",
     "title": "Netflix"
   },
@@ -128,5 +128,45 @@
     "link": "https://cobalt.tools",
     "imgSrc": "assets/cobalt.png",
     "title": "cobalt tools"
+  },
+  {
+    "link": "https://www.crazygames.com",
+    "imgSrc": "assets/crazygames.png",
+    "title": "Crazy Games"
+  },
+  {
+    "link": "https://www.easyfun.gg",
+    "imgSrc": "assets/easyfun.png",
+    "title": "Easyfun.gg"
+  },
+  {
+    "link": "https://turbowarp.org",
+    "imgSrc": "assets/turbowarp.png",
+    "title": "TurboWarp"
+  },
+  {
+    "link": "https://kahoot.club",
+    "imgSrc": "assets/kahoot.png",
+    "title": "Kahoot Hacks"
+  },
+  {
+    "link": "https://vscode.dev",
+    "imgSrc": "assets/vscode.png",
+    "title": "Visual Studio Code"
+  },
+  {
+    "link": "https://ai.usewaves.site",
+    "imgSrc": "assets/chatgpt.png",
+    "title": "ChatGPT"
+  },
+  {
+    "link": "https://store.steampowered.com",
+    "imgSrc": "assets/steam.png",
+    "title": "Steam"
+  },
+  {
+    "link": "https://win11.blueedge.me",
+    "imgSrc": "assets/win11.png",
+    "title": "Windows 11"
   }
 ]

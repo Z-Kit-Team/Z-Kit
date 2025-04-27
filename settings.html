@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Kit</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <style>
+    .file-explorer {
+      position: fixed;
+      left: 85px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 250px;
+      height: 90vh;
+      background: rgba(30, 30, 30, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 11;
+    }
+
+    .file-item {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+      font-family: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+    .file-item:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateX(5px);
+    }
+
+    .file-item.active {
+      background: rgba(255, 255, 255, 0.2);
+      border-left: 3px solid white;
+    }
+
+    .floating-container {
+      position: fixed;
+      left: 405px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: calc(100% - 500px);
+      height: 90vh;
+      background: rgba(30, 30, 30, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 5px;
+      padding: 20px;
+      background: rgba(30, 30, 30, 0.5);
+      z-index: 10;
+    }
+
+    .settings-container {
+      color: white;
+      height: 100%;
+      overflow-y: auto;
+      padding: 20px;
+      font-family: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+    .page-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .setting-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      height: auto;
+      gap: 5px;
+    }
+
+    .setting-subtext {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    select,
+    input[type="text"] {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      color: white;
+      width: 200px;
+    }
+
+    .atkinson-hyperlegible-next-regular {
+      font-family: "Atkinson Hyperlegible Next", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .atkinson-hyperlegible-next-bold {
+      font-family: "Atkinson Hyperlegible Next", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        margin-left: auto;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(200, 200, 200, 0.5);
+        transition: 0.4s;
+        border-radius: 25px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 19px;
+        width: 19px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: rgba(100, 100, 100, 0.8);
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(25px);
+    }
+
+    select {
+      background-color: #595959;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      color: #fff;
+      font-family: "Atkinson Hyperlegible Next", sans-serif;
+      font-size: 16px;
+      width: 220px;
+      margin-left: auto;
+      position: relative;
+    }
+
+    .setting-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        height: auto;
+        gap: 10px;
+      }
+
+      .setting-subtext {
+        margin-top: 2px;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        align-self: center;
+        text-align: center;
+      }
+
+      .styled-button {
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Atkinson Hyperlegible Next", sans-serif;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .styled-button:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .setting-item label {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .setting-item select,
+      .setting-item input[type="text"] {
+        margin: 0;
+        align-self: center;
+      }
+
+      #keybind-input {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 8px;
+        border-radius: 4px;
+        color: white;
+        width: 200px;
+        font-family: "Atkinson Hyperlegible Next", sans-serif;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+      }
+
+      #keybind-input:focus {
+        border-color: rgba(255, 255, 255, 0.8);
+        outline: none;
+      }
+
+      .url-input-wrapper {
+          display: flex;
+          align-items: center;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 4px;
+          padding: 5px;
+      }
+
+      .url-prefix {
+          color: white;
+          font-family: "Atkinson Hyperlegible Next", sans-serif;
+          margin-right: 5px;
+      }
+
+      .url-input-wrapper input[type="text"] {
+          border: none;
+          background: transparent;
+          color: white;
+          flex: 1;
+          outline: none;
+          font-family: "Atkinson Hyperlegible Next", sans-serif;
+          height: 1px;
+          padding: 8px;
+      }
+
+  </style>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="background">
+    <div class="stars"></div>
+  </div>
+
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="assets/logo.png" class="logo" alt="Logo">
+    </div>
+    <div class="divider"></div>
+    <div class="nav-item">
+      <a href="home.html">
+        <span class="material-symbols-outlined">home</span>
+      </a>
+    </div>
+    <div class="divider"></div>
+    <div class="nav-item">
+      <a href="search.html">
+        <span class="material-symbols-outlined">search</span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a href="games.html">
+        <span class="material-symbols-outlined">stadia_controller</span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a href="apps.html">
+        <span class="material-symbols-outlined">apps</span>
+      </a>
+    </div>
+    <div class="divider"></div>
+    <div class="nav-item">
+      <a href="about.html">
+        <span class="material-symbols-outlined">info</span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a href="settings.html">
+        <span class="material-symbols-outlined">settings</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="file-explorer">
+    <div class="file-item" onclick="switchPage('general')">General</div>
+    <div class="file-item" onclick="switchPage('appearance')">Appearance</div>
+    <!-- <div class="file-item" onclick="switchPage('proxy')">Proxy</div> -->
+    <div class="file-item" onclick="switchPage('advanced')">Advanced</div>
+    <div id="commit-sha" style="position: absolute; bottom: 10px; left: 0; right: 0; color: white; font-size: 14px; text-align: center; font-family: 'Atkinson Hyperlegible Next', sans-serif;"></div>
+  </div>
+
+  <div class="floating-container">
+    <div class="settings-container">
+      <div id="general" class="settings-page">
+        <div class="page-title">General Settings</div>
+        <div class="setting-item">
+          <label>Panic Keybind</label>
+          <input type="text" id="panic-keybind" readonly placeholder="[no keybind set]" onclick="startKeybindInput(this)">
+        </div>
+        <div class="setting-item">
+          <label>Panic URL</label>
+          <small class="setting-subtext">When you press the panic keybind, it will send you to this URL.</small>
+          <div class="url-input-wrapper">
+            <span class="url-prefix">https://</span>
+            <input type="text" id="custom-url" placeholder="google.com">
+          </div>
+        </div>
+      </div>
+
+      <div id="appearance" class="settings-page" style="display: none;">
+        <div class="page-title">Appearance Settings</div>
+        <div class="setting-item">
+          <label>Disable Background Particles</label>
+          <label class="switch">
+            <input type="checkbox" id="particles-toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <div id="advanced" class="settings-page" style="display: none;">
+        <div class="page-title">Advanced Settings</div>
+        <div class="setting-item">
+          <label>Reset settings</label>
+          <button id="placeholder-button" class="styled-button">Execute</button>
+        </div>
+      </div>
+
+      <div id="proxy" class="settings-page" style="display: none;">
+        <div class="page-title">Proxy Settings</div>
+        <div class="setting-item">
+          <label>Transport Method</label>
+          <select id="transport-method">
+            <option value="epoxy" selected>Epoxy</option>
+            <option value="bare-server">Bare Server</option>
+          </select>
+        </div>
+        <div class="setting-item">
+          <label>Custom Wisp URL</label>
+          <div class="url-input-wrapper">
+            <span class="url-prefix">wss://</span>
+            <input type="text" id="custom-wisp-url" placeholder="zkit.above.gay/wisp">
+          </div>
+        </div>
+        <div class="setting-item">
+          <label>Proxy All Games</label>
+          <label class="switch">
+            <input type="checkbox" id="proxy-all-games">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'assets/json/particlesjs-config.json', function () {
+      console.log('particles.js loaded');
+    });
+  </script>
+
+  <script>
+    function switchPage(page) {
+      document.querySelectorAll('.settings-page').forEach(pageElement => {
+        pageElement.style.display = 'none';
+      });
+      document.getElementById(page).style.display = 'block';
+
+      document.querySelectorAll('.file-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      document.querySelector(`.file-item[onclick="switchPage('${page}')"]`).classList.add('active');
+    }
+
+    switchPage('general');
+
+    function startKeybindInput(inputElement) {
+      inputElement.value = "Waiting for input...";
+      inputElement.style.color = "rgba(255, 255, 255, 0.5)";
+      inputElement.focus();
+      const pressedKeys = new Set();
+
+      function keydownHandler(event) {
+        event.preventDefault();
+        pressedKeys.add(event.key);
+        inputElement.value = Array.from(pressedKeys).join(" + ");
+        inputElement.style.color = "white";
+      }
+
+      function blurHandler() {
+        if (pressedKeys.size === 0) {
+          inputElement.value = "[no keybind set]";
+          inputElement.style.color = "rgba(255, 255, 255, 0.5)";
+        } else {
+          saveSetting('panic-keybind', JSON.stringify(Array.from(pressedKeys)));
+        }
+        inputElement.removeEventListener("keydown", keydownHandler);
+        inputElement.removeEventListener("blur", blurHandler);
+      }
+
+      inputElement.addEventListener("keydown", keydownHandler);
+      inputElement.addEventListener("blur", blurHandler);
+    }
+
+    function saveSetting(key, value) {
+      localStorage.setItem(key, value);
+      console.log(`Saved setting: ${key} = ${value}`);
+    }
+
+    function loadSetting(key, defaultValue) {
+      return localStorage.getItem(key) || defaultValue;
+    }
+
+    function resetSettings() {
+      localStorage.clear();
+      location.reload();
+    }
+
+    function initializeSettings() {
+      let panicKeybind = JSON.parse(loadSetting('panic-keybind', '[]'));
+      if (panicKeybind.length === 1 && panicKeybind[0] === "Waiting for input...") {
+        localStorage.removeItem('panic-keybind');
+        panicKeybind = [];
+      }
+      document.getElementById('panic-keybind').value = panicKeybind.length > 0 ? panicKeybind.join(" + ") : "";
+      document.getElementById('custom-url').value = loadSetting('custom-url', 'google.com');
+      document.getElementById('particles-toggle').checked = loadSetting('particles-toggle', 'false') === 'true';
+      document.getElementById('transport-method').value = loadSetting('transport-method', 'epoxy');
+      document.getElementById('custom-wisp-url').value = loadSetting('custom-wisp-url', '');
+      document.getElementById('proxy-all-games').checked = loadSetting('proxy-all-games', 'false') === 'true';
+
+      document.getElementById('panic-keybind').addEventListener('blur', (e) => {
+        saveSetting('panic-keybind', JSON.stringify(e.target.value.split(" + ")));
+        reloadLoadSettings();
+      });
+
+      document.getElementById('custom-url').addEventListener('blur', (e) => {
+        saveSetting('custom-url', e.target.value);
+        reloadLoadSettings();
+      });
+
+      document.getElementById('particles-toggle').addEventListener('change', (e) => {
+        saveSetting('particles-toggle', e.target.checked);
+        if (e.target.checked) {
+          document.getElementById('particles-js').style.display = 'none';
+        } else {
+          document.getElementById('particles-js').style.display = 'block';
+          particlesJS.load('particles-js', 'assets/json/particlesjs-config.json', function () {
+            console.log('particles.js reloaded after toggle');
+          });
+        }
+        reloadLoadSettings();
+      });
+
+      document.getElementById('transport-method').addEventListener('change', (e) => {
+        saveSetting('transport-method', e.target.value);
+        reloadLoadSettings();
+      });
+
+      document.getElementById('custom-wisp-url').addEventListener('blur', (e) => {
+        saveSetting('custom-wisp-url', e.target.value);
+        reloadLoadSettings();
+      });
+
+      document.getElementById('proxy-all-games').addEventListener('change', (e) => {
+        saveSetting('proxy-all-games', e.target.checked);
+        reloadLoadSettings();
+      });
+
+      document.getElementById('placeholder-button').addEventListener('click', resetSettings);
+    }
+
+    document.addEventListener('DOMContentLoaded', initializeSettings);
+
+    function reloadLoadSettings() {
+      const oldScript = document.querySelector('script[src="assets/js/loadsettings.js"]');
+      const newScript = document.createElement('script');
+      newScript.src = 'assets/js/loadsettings.js';
+      newScript.onload = () => {
+        oldScript.remove();
+      };
+      document.body.appendChild(newScript);
+    }
+  </script>
+
+  <script src="assets/js/loadsettings.js"></script>
+</body>
+</html>

@@ -255,12 +255,14 @@ body {
     padding-left: 0;
 }
 
-/* .sidebar .nav-item:last-child {
+/* Uncommented and updated last-child styles */
+.sidebar .nav-item:last-child {
     margin-top: auto;
+    margin-bottom: 20px;
 }
 
 .sidebar .nav-item:last-child a {
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 /* --- Overridden Styles for the Search Page --- */
