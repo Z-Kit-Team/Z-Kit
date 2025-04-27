@@ -119,7 +119,7 @@
       <span class="material-symbols-outlined" onclick="history.forward()">arrow_forward</span>
     </div>
     <div class="nav-item">
-      <span class="material-symbols-outlined" onclick="location.reload()">refresh</span>
+      <span class="material-symbols-outlined" onclick="window.frames['ihatefirefoxiframes'].location.reload();">refresh</span>
     </div>
     <div class="nav-item">
       <span class="material-symbols-outlined" onclick="openDevTools()">code_blocks</span>
@@ -127,7 +127,7 @@
   </div>
 
   <div class="iframe-container">
-    <iframe id="website-viewer" sandbox="allow-scripts allow-pointer-lock allow-forms allow-same-origin allow-downloads allow-pointer-lock" allowfullscreen="true" frameborder="0" src=""></iframe>
+    <iframe id="website-viewer" name="ihatefirefoxiframes" sandbox="allow-scripts allow-pointer-lock allow-forms allow-same-origin allow-downloads allow-pointer-lock" allowfullscreen="true" frameborder="0" src=""></iframe>
   </div>
 
   <script>

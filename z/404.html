@@ -181,10 +181,10 @@
           <h1>Ultraviolet error!</h1>
         </div>
         <div class="desc">
-          <p>If you see this, the Service Worker is not registered on your browser. Please press the button below to fix this, and then refresh the page. If it is a game, the refresh button is in the bottom right. If it is anything else, the refresh button is in the navbar in the top.</p>
+          <p>If you see this, the Service Worker is not registered on your browser. Please press the button below to fix this.</p>
           <p id="uv-error"></p>
           <code id="uv-error-code"></code>
-          <button id="uv-register-sw">
+          <button id="uv-register-sw" onClick="window.location.reload();">
             Register ServiceWorker
           </button>
         </div>
