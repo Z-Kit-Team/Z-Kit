@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Z-Kit Launcher</title>
+  <title>Z-Kit Notice</title>
   <link rel="shortcut icon" href="https://google.com/favicon.ico" type="image/x-icon">
 
   <meta property="benrogo:index" content="index">
@@ -152,6 +152,18 @@
       left: 0;
       z-index: -1;
     }
+
+    .content p a {
+      color: silver;
+      text-shadow: 0 0 20px silver, 0 0 40px silver, 0 0 60px silver;
+      text-decoration: underline;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    .content p a:hover {
+      color: #fff;
+    }
   </style>
 </head>
 
@@ -160,8 +172,16 @@
   <div class="background">
     <div class="stars"></div>
     <div class="content">
-      <h1><span>Z-Kit</span> Launcher</h1>
+      <h1><span>Z-Kit</span> Notice</h1>
       <div class="divider"></div>
+
+      <p style="color: #ccc; font-size: 1.2rem; margin-bottom: 20px;">
+        You are using an <b>outdated link</b>. Please use a new link from the <b>Z-Kit D⁠i⁠s⁠c⁠o⁠r⁠d⁠</b>.
+        <br>
+        Use the button below to launch a view of the D⁠i⁠s⁠c⁠o⁠r⁠d⁠ server for a new link, or join it at <b>.gg/aG5t3ZaENv</b>
+        <br><br>
+        If you cannot access the D⁠i⁠s⁠c⁠o⁠r⁠d⁠ for whatever reason, try <b><a href="https://threehundredmice.bashundharafoundation.org.np/">this link.</a></b>
+      </p>
 
       <label for="title-input">Page Title</label>
       <input type="text" id="title-input" placeholder="New Tab" value="New Tab" />
@@ -177,30 +197,13 @@
         <option value="canvas">Canvas</option>
       </select>
 
-      <button id="generate-button"><span>Launch Z-Kit</span></button>
-      <p style="margin-top: 10px; color: #ccc; font-size: 0.9rem;">
-        Or, <a id="download-launcher" href="#" download="launcher.html" style="color: silver; text-decoration: underline;">download the launcher</a>
-      </p>
-      <a href="https://github.com/Z-Kit-Team/Z-Kit" target="_blank" style="
-        position: absolute; 
-        bottom: 20px;
-        left: 50%; 
-        transform: translateX(-50%); 
-        width: auto; 
-        height: auto; 
-        max-width: 200px;
-        max-height: 130px;">
-        <img src="https://zkit.above.gay/assets/launchergithub.png" alt="GitHub" style="width: 100%; height: auto;">
-      </a>
+      <button id="generate-button"><span>Launch D⁠i⁠s⁠c⁠o⁠r⁠d⁠</span></button>
     </div>
   </div>
 
   <script>
 
-    const url = (window.location.protocol === "https:") ?
-        window.location.href + 'home.html'
-        :
-        "https://zkit.above.gay/home";
+    const url = "https://e.widgetbot.io/channels/1341303023107837982/1360381163780440094";
       
     document.getElementById('pre-saved-options').addEventListener('change', (e) => {
       const titleInput = document.getElementById('title-input');
@@ -265,23 +268,6 @@
       win.document.body.appendChild(iframe);
 
       window.location.href = "https://www.google.com/";
-    });
-
-    const launcherBase64 = atob(`PCFkb2N0eXBlaHRtbD48aHRtbCBsYW5nPWVuPjxtZXRhIGNoYXJzZXQ9VVRGLTg+PG1ldGEgY29udGVudD0nd2lkdGg9ZGV2aWNlLXdpZHRoLGluaXRpYWwtc2NhbGU9MSduYW1lPXZpZXdwb3J0Pjx0aXRsZT5aLUtpdCBMYXVuY2hlcjwvdGl0bGU+PGxpbmsgaHJlZj1odHRwczovL2dvb2dsZS5jb20vZmF2aWNvbi5pY28gcmVsPSdzaG9ydGN1dCBpY29uJ3R5cGU9aW1hZ2UveC1pY29uPjxzdHlsZT5ib2R5e21hcmdpbjowO2hlaWdodDoxMDB2aDtkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpjZW50ZXI7YmFja2dyb3VuZDpyYWRpYWwtZ3JhZGllbnQoY2lyY2xlIGF0IGJvdHRvbSwjNTU1LCMwMDApO2NvbG9yOiNmZmY7Zm9udC1mYW1pbHk6QXJpYWwsc2Fucy1zZXJpZjtvdmVyZmxvdzpoaWRkZW47cG9zaXRpb246cmVsYXRpdmV9LmJhY2tncm91bmR7cG9zaXRpb246YWJzb2x1dGU7d2lkdGg6MTAwJTtoZWlnaHQ6MTAwJX0uc3RhcnN7cG9zaXRpb246YWJzb2x1dGU7d2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTtiYWNrZ3JvdW5kOjAgMDtvdmVyZmxvdzpoaWRkZW59LnN0YXJ7cG9zaXRpb246YWJzb2x1dGU7d2lkdGg6MnB4O2hlaWdodDoycHg7YmFja2dyb3VuZDojZmZmO2JvcmRlci1yYWRpdXM6NTAlO29wYWNpdHk6MDthbmltYXRpb246dHdpbmtsZSA1cyBpbmZpbml0ZX1Aa2V5ZnJhbWVzIHR3aW5rbGV7MCV7b3BhY2l0eTowfTUwJXtvcGFjaXR5OjF9MTAwJXtvcGFjaXR5OjB9fS5jb250ZW50e3RleHQtYWxpZ246Y2VudGVyO3Bvc2l0aW9uOnJlbGF0aXZlO3otaW5kZXg6MTtkaXNwbGF5OmZsZXg7ZmxleC1kaXJlY3Rpb246Y29sdW1uO2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2hlaWdodDoxMDAlfS5jb250ZW50IGgxe2ZvbnQtc2l6ZTozcmVtO21hcmdpbjowO2NvbG9yOiNmZmZ9LmNvbnRlbnQgaDEgc3Bhbntjb2xvcjpzaWx2ZXI7dGV4dC1zaGFkb3c6MCAwIDIwcHggc2lsdmVyLDAgMCA0MHB4IHNpbHZlciwwIDAgNjBweCBzaWx2ZXJ9LmRpdmlkZXJ7d2lkdGg6MzUwcHg7aGVpZ2h0OjJweDtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjU1LDI1NSwyNTUsLjUpO21hcmdpbjoyMHB4IDB9bGFiZWx7ZGlzcGxheTpibG9jaztmb250LXNpemU6MXJlbTttYXJnaW4tYm90dG9tOjVweDtjb2xvcjojY2NjO2ZvbnQtd2VpZ2h0OjcwMH1pbnB1dCxzZWxlY3R7d2lkdGg6MzAwcHg7cGFkZGluZzoxMnB4O21hcmdpbi1ib3R0b206MTVweDtib3JkZXI6bm9uZTtib3JkZXItcmFkaXVzOjEycHg7Ym9yZGVyOjJweCBzb2xpZCByZ2JhKDI1NSwyNTUsMjU1LC4yKTtiYWNrZ3JvdW5kLWNvbG9yOiMzMzM7Y29sb3I6I2ZmZjtmb250LXNpemU6MXJlbTt0cmFuc2l0aW9uOmFsbCAuM3MgZWFzZX1pbnB1dDpmb2N1cyxzZWxlY3Q6Zm9jdXN7b3V0bGluZTowO2JvcmRlcjoycHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwuNSl9I2dlbmVyYXRlLWJ1dHRvbntiYWNrZ3JvdW5kOmdyZXk7Y29sb3I6I2ZmZjtmb250LXNpemU6MXJlbTtwYWRkaW5nOjEwcHggMjBweDtib3JkZXItcmFkaXVzOjE3cHg7Zm9udC13ZWlnaHQ6NzAwO3RleHQtc2hhZG93OjAgMCAyMHB4IHNpbHZlciwwIDAgNDBweCBzaWx2ZXIsMCAwIDYwcHggc2lsdmVyO3Bvc2l0aW9uOnJlbGF0aXZlO2JvcmRlcjoycHggc29saWQgc2lsdmVyO2JveC1zaGFkb3c6MCAwIDEwcHggc2lsdmVyO3RyYW5zaXRpb246dHJhbnNmb3JtIC4zcyBlYXNlLGJveC1zaGFkb3cgLjNzIGVhc2Usb3BhY2l0eSAuM3MgZWFzZTtjdXJzb3I6cG9pbnRlcn0jZ2VuZXJhdGUtYnV0dG9uOmhvdmVye2JveC1zaGFkb3c6MCAwIDIwcHggc2lsdmVyO29wYWNpdHk6Ljl9I3BhcnRpY2xlcy1qc3twb3NpdGlvbjpmaXhlZDt3aWR0aDoxMDAlO2hlaWdodDoxMDAlO3RvcDowO2xlZnQ6MDt6LWluZGV4Oi0xfTwvc3R5bGU+PGRpdiBpZD1wYXJ0aWNsZXMtanM+PC9kaXY+PGRpdiBjbGFzcz1iYWNrZ3JvdW5kPjxkaXYgY2xhc3M9c3RhcnM+PC9kaXY+PGRpdiBjbGFzcz1jb250ZW50PjxoMT48c3Bhbj5aLUtpdDwvc3Bhbj4gTGF1bmNoZXI8L2gxPjxkaXYgY2xhc3M9ZGl2aWRlcj48L2Rpdj48bGFiZWwgZm9yPXRpdGxlLWlucHV0PlBhZ2UgVGl0bGU8L2xhYmVsPiA8aW5wdXQgaWQ9dGl0bGUtaW5wdXQgcGxhY2Vob2xkZXI9J05ldyBUYWIndmFsdWU9J05ldyBUYWInPiA8bGFiZWwgZm9yPXByZS1zYXZlZC1vcHRpb25zPlBhZ2UgSWNvbjwvbGFiZWw+IDxzZWxlY3QgaWQ9cHJlLXNhdmVkLW9wdGlvbnM+PG9wdGlvbiB2YWx1ZT0nJ3NlbGVjdGVkPkNob29zZSBhbiBPcHRpb248b3B0aW9uIHZhbHVlPXNjaG9vbG9neT5TY2hvb2xvZ3k8b3B0aW9uIHZhbHVlPWNsZXZlcj5DbGV2ZXI8b3B0aW9uIHZhbHVlPWdvb2dsZS1jbGFzc3Jvb20+R29vZ2xlIENsYXNzcm9vbTxvcHRpb24gdmFsdWU9Z29vZ2xlZG9jcz5Hb29nbGUgRG9jczxvcHRpb24gdmFsdWU9Z29vZ2xlc2xpZGVzPkdvb2dsZSBTbGlkZXM8b3B0aW9uIHZhbHVlPWNhbnZhcz5DYW52YXM8L3NlbGVjdD4gPGJ1dHRvbiBpZD1nZW5lcmF0ZS1idXR0b24+PHNwYW4+TGF1bmNoIFotS2l0PC9zcGFuPjwvYnV0dG9uPjwvZGl2PjwvZGl2PjxzY3JpcHQ+Y29uc3QgdXJsPSJodHRwczoiPT09d2luZG93LmxvY2F0aW9uLnByb3RvY29sP3dpbmRvdy5sb2NhdGlvbi5vcmlnaW4rIi9ob21lIjoiaHR0cHM6Ly96a2l0LmFib3ZlLmdheS9ob21lIjtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicHJlLXNhdmVkLW9wdGlvbnMiKS5hZGRFdmVudExpc3RlbmVyKCJjaGFuZ2UiLGU9PntsZXQgbz1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidGl0bGUtaW5wdXQiKTtlLnRhcmdldC52YWx1ZT8iZ29vZ2xlLWNsYXNzcm9vbSI9PT1lLnRhcmdldC52YWx1ZT9vLnZhbHVlPSJIb21lIjoiY2xldmVyIj09PWUudGFyZ2V0LnZhbHVlP28udmFsdWU9IkNsZXZlciB8IFBvcnRhbCI6InNjaG9vbG9neSI9PT1lLnRhcmdldC52YWx1ZT9vLnZhbHVlPSJIb21lIHwgU2Nob29sb2d5IjoiZ29vZ2xlZG9jcyI9PT1lLnRhcmdldC52YWx1ZT9vLnZhbHVlPSJVbnRpdGxlZCBkb2N1bWVudCAtIEdvb2dsZSBEb2NzIjoiZ29vZ2xlc2xpZGVzIj09PWUudGFyZ2V0LnZhbHVlP28udmFsdWU9IlVudGl0bGVkIHByZXNlbnRhdGlvbiAtIEdvb2dsZSBTbGlkZXMiOiJjYW52YXMiPT09ZS50YXJnZXQudmFsdWUmJihvLnZhbHVlPSJEYXNoYm9hcmQiKTpvLnZhbHVlPSJOZXcgVGFiIn0pLGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJnZW5lcmF0ZS1idXR0b24iKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsKCk9PntsZXQgZT1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidGl0bGUtaW5wdXQiKSxvPWUudmFsdWUsdD0iIixzPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwcmUtc2F2ZWQtb3B0aW9ucyIpLnZhbHVlOyJzY2hvb2xvZ3kiPT09cz90PSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQWJvdmVzY29yZS96a2l0L21haW4vcmVzb3VyY2VzL2ljb25zL3NjaG9vbG9neS5wbmciOiJnb29nbGUtY2xhc3Nyb29tIj09PXM/dD0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fib3Zlc2NvcmUvemtpdC9tYWluL3Jlc291cmNlcy9pY29ucy9jbGFzc3Jvb20ucG5nIjoiY2xldmVyIj09PXM/dD0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fib3Zlc2NvcmUvemtpdC9tYWluL3Jlc291cmNlcy9pY29ucy9jbGV2ZXIucG5nIjoiZ29vZ2xlZG9jcyI9PT1zP3Q9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BYm92ZXNjb3JlL3praXQvbWFpbi9yZXNvdXJjZXMvaWNvbnMvZ29vZ2xlZG9jcy5wbmciOiJnb29nbGVzbGlkZXMiPT09cz90PSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQWJvdmVzY29yZS96a2l0L21haW4vcmVzb3VyY2VzL2ljb25zL2dvb2dsZXNsaWRlcy5wbmciOiJjYW52YXMiPT09cyYmKHQ9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BYm92ZXNjb3JlL3praXQvbWFpbi9yZXNvdXJjZXMvaWNvbnMvY2FudmFzLnBuZyIpO3ZhciBuPXdpbmRvdy5vcGVuKCk7bi5kb2N1bWVudC50aXRsZT1vO3ZhciBsPW4uZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgibGluayIpO2wucmVsPSJzaG9ydGN1dCBpY29uIixsLmhyZWY9dCxuLmRvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQobCksbi5kb2N1bWVudC5ib2R5LnN0eWxlLm1hcmdpbj0iMCIsbi5kb2N1bWVudC5ib2R5LnN0eWxlLmhlaWdodD0iMTAwdmgiO3ZhciBhPW4uZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgiaWZyYW1lIik7YS5zdHlsZS5ib3JkZXI9Im5vbmUiLGEuc3R5bGUud2lkdGg9IjEwMCUiLGEuc3R5bGUuaGVpZ2h0PSIxMDAlIixhLnN0eWxlLm1hcmdpbj0iMCIsYS5zcmM9dXJsLG4uZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKSx3aW5kb3cubG9jYXRpb24uaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8ifSk7PC9zY3JpcHQ+PHNjcmlwdCBzcmM9aHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvcGFydGljbGVzLmpzLzIuMC4wL3BhcnRpY2xlcy5taW4uanM+PC9zY3JpcHQ+PHNjcmlwdD5jb25zdCBwYXJ0aWNsZXNDb25maWc9e3BhcnRpY2xlczp7bnVtYmVyOnt2YWx1ZTo4MCxkZW5zaXR5OntlbmFibGU6ITAsdmFsdWVfYXJlYTo4MDB9fSxjb2xvcjp7dmFsdWU6IiNmZmZmZmYifSxzaGFwZTp7dHlwZToiY2lyY2xlIixzdHJva2U6e3dpZHRoOjAsY29sb3I6IiMwMDAwMDAifSxwb2x5Z29uOntuYl9zaWRlczo1fX0sb3BhY2l0eTp7dmFsdWU6LjUscmFuZG9tOiExLGFuaW06e2VuYWJsZTohMSxzcGVlZDoxLG9wYWNpdHlfbWluOi4xLHN5bmM6ITF9fSxzaXplOnt2YWx1ZTozLHJhbmRvbTohMCxhbmltOntlbmFibGU6ITEsc3BlZWQ6NDAsc2l6ZV9taW46LjEsc3luYzohMX19LGxpbmVfbGlua2VkOntlbmFibGU6ITAsZGlzdGFuY2U6MTUwLGNvbG9yOiIjZmZmZmZmIixvcGFjaXR5Oi40LHdpZHRoOjF9LG1vdmU6e2VuYWJsZTohMCxzcGVlZDo2LGRpcmVjdGlvbjoibm9uZSIscmFuZG9tOiExLHN0cmFpZ2h0OiExLG91dF9tb2RlOiJvdXQiLGJvdW5jZTohMSxhdHRyYWN0OntlbmFibGU6ITEscm90YXRlWDo2MDAscm90YXRlWToxMjAwfX19LGludGVyYWN0aXZpdHk6e2RldGVjdF9vbjoiY2FudmFzIixldmVudHM6e29uaG92ZXI6e2VuYWJsZTohMSxtb2RlOiJyZXB1bHNlIn0sb25jbGljazp7ZW5hYmxlOiExLG1vZGU6InJlcHVsc2UifSxyZXNpemU6ITB9LG1vZGVzOntncmFiOntkaXN0YW5jZTo0MDAsbGluZV9saW5rZWQ6e29wYWNpdHk6MX19LGJ1YmJsZTp7ZGlzdGFuY2U6NDAwLHNpemU6NDAsZHVyYXRpb246MixvcGFjaXR5Ojgsc3BlZWQ6M30scmVwdWxzZTp7ZGlzdGFuY2U6MjAwLGR1cmF0aW9uOi40fSxwdXNoOntwYXJ0aWNsZXNfbmI6NH0scmVtb3ZlOntwYXJ0aWNsZXNfbmI6Mn19fSxyZXRpbmFfZGV0ZWN0OiEwfTtwYXJ0aWNsZXNKUygicGFydGljbGVzLWpzIixwYXJ0aWNsZXNDb25maWcpOzwvc2NyaXB0Pg==`);
-    // apparently some idiots thought this was a virus somehow, so i'm here to clear some misconception.
-    // this is the launcher, minified, base64 encoded. if you base64 DEcode this, itll end up back as an html file.
-    // re-beautifying this decoded launcher, you get: a normal launcher html.
-
-    // whoever you are should learn to read lmao
-
-    document.getElementById('download-launcher').addEventListener('click', (e) => {
-      e.preventDefault();
-
-      const blob = new Blob([launcherBase64], { type: "text/html" });
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = "math.html";
-      link.click();
     });
   </script>
 
