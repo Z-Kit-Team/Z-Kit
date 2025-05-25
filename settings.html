@@ -342,7 +342,7 @@
           <small class="setting-subtext">When you press the panic keybind, it will send you to this URL.</small>
           <div class="url-input-wrapper">
             <span class="url-prefix">https://</span>
-            <input type="text" id="custom-url" placeholder="google.com">
+            <input type="text" id="custom-url" placeholder="google.com?igu=1">
           </div>
         </div>
       </div>
@@ -464,7 +464,7 @@
         panicKeybind = [];
       }
       document.getElementById('panic-keybind').value = panicKeybind.length > 0 ? panicKeybind.join(" + ") : "";
-      document.getElementById('custom-url').value = loadSetting('custom-url', 'google.com');
+      document.getElementById('custom-url').value = loadSetting('custom-url', 'google.com?igu=1');
       document.getElementById('particles-toggle').checked = loadSetting('particles-toggle', 'false') === 'true';
       document.getElementById('transport-method').value = loadSetting('transport-method', 'epoxy');
       document.getElementById('custom-wisp-url').value = loadSetting('custom-wisp-url', '');

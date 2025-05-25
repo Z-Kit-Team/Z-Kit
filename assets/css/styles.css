@@ -103,10 +103,9 @@ body {
     font-size: 1rem;
     background-color: #333;
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.1); /* Light border on the right */
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Home page tiles */
 .home-directory {
     margin-top: 30px;
     display: flex;
@@ -144,7 +143,6 @@ body {
     opacity: 0.9;
 }
 
-/* Search page tiles */
 .search-directory {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -184,7 +182,7 @@ body {
 .search-tile img:hover {
     transform: scale(1.1);
 }
-/* Sidebar container with luminosity outline */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -195,15 +193,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0 20px 0; /* Reduced top padding */
+    padding: 10px 0 20px 0;
     transition: width 0.2s ease;
     z-index: 10;
-    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2); /* Subtle inner light glow */
-    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Light border on the right */
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo-container {
-    margin-bottom: 10px; /* Reduced margin below logo */
+    margin-bottom: 10px;
 }
 
 .logo {
@@ -215,7 +213,7 @@ body {
     width: 80%;
     height: 1px;
     background-color: #444;
-    margin: 5px 0; /* Slightly reduced divider margins */
+    margin: 5px 0;
 }
 
 .nav-item {
@@ -235,27 +233,23 @@ body {
     transition: all 0.2s ease;
     border-radius: 8px;
     margin: 0 auto;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
-/* Fixed hover effect to stay within sidebar */
 .nav-item a:hover {
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.1);
 }
 
-/* Adjusted hover width behavior */
 .sidebar:hover {
     width: 70px;
 }
 
-/* Removed problematic padding change on hover */
 .sidebar:hover .nav-item a {
     padding-left: 0;
 }
 
-/* Uncommented and updated last-child styles */
 .sidebar .nav-item:last-child {
     margin-top: auto;
     margin-bottom: 20px;
@@ -265,7 +259,6 @@ body {
     margin-bottom: 0;
 }
 
-/* --- Overridden Styles for the Search Page --- */
 .content.search-page {
   position: relative;
   width: 100%;
@@ -274,25 +267,22 @@ body {
   align-items: center;
 }
 
-/* Updated Top Navbar */
 .nav-bar {
   position: fixed;
   top: 0;
-  left: 50px; /* Start immediately after the sidebar */
+  left: 50px;
   width: calc(100% - 50px);
-  height: 40px; /* Increased height */
+  height: 40px;
   background-color: #1f1f1f;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   z-index: 5;
-  /* Rounded left edge where it connects to the sidebar */
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-/* Nav icons: icons only, no extra button styling */
 .nav-bar a {
   background: none;
   padding: 0;
@@ -307,14 +297,6 @@ body {
   color: white;
 }
 
-
-
-
-
-
-
-
-
 #search-bar {
     transition: all 0.5s ease-in-out;
     position: relative;
@@ -323,7 +305,7 @@ body {
 
 #search-bar:focus {
     outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.5); /* Light border on the right */
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 #search-bar.active {

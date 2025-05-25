@@ -22,7 +22,7 @@ if (getSettingValue("particles-toggle") === "true") {
 
 if (doesSettingExist("panic-keybind")) {
     if (!doesSettingExist("custom-url")) {
-        localStorage.setItem("custom-url", "google.com");
+        localStorage.setItem("custom-url", "google.com?igu=1");
     }
     
     const panicKeybind = JSON.parse(getSettingValue("panic-keybind", "[]"));

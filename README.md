@@ -1,3 +1,6 @@
+> [!CAUTION]  
+> This repository is outdated, as Z-Kit is no longer hosted statically.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/40df0ec0-7dc4-43f3-99cb-b87a2b7b163b" alt="Full Z-Kit Logo">
 <p align="center">
